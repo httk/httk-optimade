@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project": "httk-optimade",
+  "url": "https://docs.httk.org/httk-optimade",
+  "source_commit": "9da605d24ce2a6bcaf5691b0cbd156e351799e07",
+  "default": {
+    "name": "dev:main",
+    "path": "dev/main/",
+    "channel": "dev"
+  },
+  "versions": [
+    {
+      "name": "dev:main",
+      "path": "dev/main/",
+      "channel": "dev"
+    }
+  ]
+}

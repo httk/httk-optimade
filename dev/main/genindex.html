@@ -1,0 +1,2242 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#"><link rel="search" title="Search" href="search.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 --><title>Index - httk-optimade dev:main documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="_static/selector.css?v=626bada3" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     Development documentation (dev:main) — content may differ from any release. 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">httk-optimade dev:main documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <span class="sidebar-brand-text">httk-optimade dev:main documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="serving_providers.html">Serving entry providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Reading a remote OPTIMADE service</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples/index.html">Examples</a><input aria-label="Toggle navigation of Examples" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/demo_server/serve.html">A small OPTIMADE demo server over an in-memory dataset.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/in_memory_backend.html">Standing up a backend from plain dict rows, without writing a provider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/provider_server/serve.html">A minimal OPTIMADE server fed by an httk-core entry provider.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/query_in_process.html">Walking a live OPTIMADE API in-process, without binding a port</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/examples.html">Walking an OPTIMADE API in-process</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input aria-label="Toggle navigation of Reference" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/index.html">httk.optimade</a><input aria-label="Toggle navigation of httk.optimade" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/api/index.html">httk.optimade.api</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/index.html">httk.optimade.backend</a><input aria-label="Toggle navigation of httk.optimade.backend" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/adapter/index.html">httk.optimade.backend.adapter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/execution/index.html">httk.optimade.backend.execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/handlers/index.html">httk.optimade.backend.handlers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/memory_store/index.html">httk.optimade.backend.memory_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/partial/index.html">httk.optimade.backend.partial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/protocols/index.html">httk.optimade.backend.protocols</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/providers/index.html">httk.optimade.backend.providers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/translation/index.html">httk.optimade.backend.translation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/client/index.html">httk.optimade.client</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/index.html">httk.optimade.endpoints</a><input aria-label="Toggle navigation of httk.optimade.endpoints" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/entries/index.html">httk.optimade.endpoints.entries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/error/index.html">httk.optimade.endpoints.error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/info/index.html">httk.optimade.endpoints.info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/meta/index.html">httk.optimade.endpoints.meta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/partial_data/index.html">httk.optimade.endpoints.partial_data</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/index.html">httk.optimade.engine</a><input aria-label="Toggle navigation of httk.optimade.engine" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/processing/index.html">httk.optimade.engine.processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/validate/index.html">httk.optimade.engine.validate</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/filter/index.html">httk.optimade.filter</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/model/index.html">httk.optimade.model</a><input aria-label="Toggle navigation of httk.optimade.model" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/config/index.html">httk.optimade.model.config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/errors/index.html">httk.optimade.model.errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/request/index.html">httk.optimade.model.request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/results/index.html">httk.optimade.model.results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/versions/index.html">httk.optimade.model.versions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/remote_query/index.html">httk.optimade.remote_query</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/index.html">httk.optimade.runtime</a><input aria-label="Toggle navigation of httk.optimade.runtime" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/asgi/index.html">httk.optimade.runtime.asgi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/devserver/index.html">httk.optimade.runtime.devserver</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/index.html">httk.optimade.schema</a><input aria-label="Toggle navigation of httk.optimade.schema" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/served/index.html">httk.optimade.schema.served</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/trajectories/index.html">httk.optimade.schema.trajectories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="how_it_works.html">How it works</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="reference/autoapi/index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/index.html">httk.optimade</a><input aria-label="Toggle navigation of httk.optimade" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/api/index.html">httk.optimade.api</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/index.html">httk.optimade.backend</a><input aria-label="Toggle navigation of httk.optimade.backend" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/adapter/index.html">httk.optimade.backend.adapter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/execution/index.html">httk.optimade.backend.execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/handlers/index.html">httk.optimade.backend.handlers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/memory_store/index.html">httk.optimade.backend.memory_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/partial/index.html">httk.optimade.backend.partial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/protocols/index.html">httk.optimade.backend.protocols</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/providers/index.html">httk.optimade.backend.providers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/backend/translation/index.html">httk.optimade.backend.translation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/client/index.html">httk.optimade.client</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/index.html">httk.optimade.endpoints</a><input aria-label="Toggle navigation of httk.optimade.endpoints" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/entries/index.html">httk.optimade.endpoints.entries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/error/index.html">httk.optimade.endpoints.error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/info/index.html">httk.optimade.endpoints.info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/meta/index.html">httk.optimade.endpoints.meta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/endpoints/partial_data/index.html">httk.optimade.endpoints.partial_data</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/index.html">httk.optimade.engine</a><input aria-label="Toggle navigation of httk.optimade.engine" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/processing/index.html">httk.optimade.engine.processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/engine/validate/index.html">httk.optimade.engine.validate</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/filter/index.html">httk.optimade.filter</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/model/index.html">httk.optimade.model</a><input aria-label="Toggle navigation of httk.optimade.model" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/config/index.html">httk.optimade.model.config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/errors/index.html">httk.optimade.model.errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/request/index.html">httk.optimade.model.request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/results/index.html">httk.optimade.model.results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/model/versions/index.html">httk.optimade.model.versions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/autoapi/httk/optimade/remote_query/index.html">httk.optimade.remote_query</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/index.html">httk.optimade.runtime</a><input aria-label="Toggle navigation of httk.optimade.runtime" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/asgi/index.html">httk.optimade.runtime.asgi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/runtime/devserver/index.html">httk.optimade.runtime.devserver</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/index.html">httk.optimade.schema</a><input aria-label="Toggle navigation of httk.optimade.schema" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/served/index.html">httk.optimade.schema.served</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/autoapi/httk/optimade/schema/trajectories/index.html">httk.optimade.schema.trajectories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#J"><strong>J</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#Q"><strong>Q</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#W"><strong>W</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.adapter_from_providers">adapter_from_providers() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.adapter_from_providers">(in module httk.optimade.backend)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/providers/index.html#httk.optimade.backend.providers.adapter_from_providers">(in module httk.optimade.backend.providers)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.add">add() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.add">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.add">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.add_offset">add_offset() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.add_offset">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.add_offset">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.add_sort">add_sort() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.add_sort">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.add_sort">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.advertised_properties">advertised_properties (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.advertised_properties">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ALL_ADVERTISED">ALL_ADVERTISED (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.ALL_ADVERTISED">(in module httk.optimade.client)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.all_entries">all_entries (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.allow_cross_origin_pagination">allow_cross_origin_pagination (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.allow_cross_origin_pagination">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryVariable.always_false">always_false() (httk.optimade.backend.memory_store.MemoryVariable method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryVariable.always_true">always_true() (httk.optimade.backend.memory_store.MemoryVariable method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.api_version">api_version (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.api_version">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.as_query_dict">as_query_dict() (httk.optimade.model.request.ValidatedParameters method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.as_query_dict">(httk.optimade.model.ValidatedParameters method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.as_query_dict">(httk.optimade.ValidatedParameters method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.available_licenses">available_licenses (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.available_licenses">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.available_licenses">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.available_licenses_for_entries">available_licenses_for_entries (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.available_licenses_for_entries">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.available_licenses_for_entries">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.backend">backend (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.backend">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter">BackendAdapter (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter">(class in httk.optimade.backend)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter">(class in httk.optimade.backend.adapter)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.base_url">base_url (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.base_url">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.baseurl">baseurl (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.baseurl">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.baseurl">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.baseurl">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.baseurl">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.baseurl">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.binding">binding (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.binding">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.build_served_schema">build_served_schema() (in module httk.optimade.schema.served)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.close">close() (httk.optimade.client.OptimadeStore method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.close">(httk.optimade.OptimadeStore method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet.column">column() (httk.optimade.backend.memory_store.MemoryResultSet method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.column">(httk.optimade.remote_query.RemoteResultSet method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.column">(httk.optimade.RemoteResultSet method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.contains">contains() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.content">content (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.content">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.OptimadeError.content">(httk.optimade.model.errors.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeError.content">(httk.optimade.model.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.content">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeError.content">(httk.optimade.OptimadeError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.content_type">content_type (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.content_type">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.content_type">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.count">count() (httk.optimade.backend.execution.StoreResults method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.count">(httk.optimade.backend.memory_store.MemorySearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#httk.optimade.backend.protocols.QueryResults.count">(httk.optimade.backend.protocols.QueryResults method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.QueryResults.count">(httk.optimade.backend.QueryResults method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.count">(httk.optimade.backend.StoreResults method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.QueryResults.count">(httk.optimade.model.QueryResults method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.QueryResults.count">(httk.optimade.model.results.QueryResults method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.count">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.count">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.CountUnavailableError">CountUnavailableError</a>, <a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.CountUnavailableError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/runtime/index.html#httk.optimade.runtime.create_app">create_app() (in module httk.optimade.runtime)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/runtime/asgi/index.html#httk.optimade.runtime.asgi.create_app">(in module httk.optimade.runtime.asgi)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.create_asgi_app">create_asgi_app() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/api/index.html#httk.optimade.api.create_asgi_app">(in module httk.optimade.api)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.cur">cur (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.cur">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet.cursor">cursor() (httk.optimade.backend.memory_store.MemoryResultSet method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.cursor">(httk.optimade.remote_query.RemoteResultSet method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.cursor">(httk.optimade.RemoteResultSet method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.data_available">data_available (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.data_available">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.data_available">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.database">database (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.database">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.database">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.default_response_fields">default_response_fields (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.default_response_properties">default_response_properties (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.default_response_properties">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.definition_id">definition_id (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.definition_id">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeDiscoveryError.detail">detail (httk.optimade.client.OptimadeDiscoveryError attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeHTTPError.detail">(httk.optimade.client.OptimadeHTTPError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeTransportError.detail">(httk.optimade.client.OptimadeTransportError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeVersionNegotiationError.detail">(httk.optimade.client.OptimadeVersionNegotiationError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeDiscoveryError.detail">(httk.optimade.OptimadeDiscoveryError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeHTTPError.detail">(httk.optimade.OptimadeHTTPError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeTransportError.detail">(httk.optimade.OptimadeTransportError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeVersionNegotiationError.detail">(httk.optimade.OptimadeVersionNegotiationError attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/engine/index.html#httk.optimade.engine.determine_optimade_version">determine_optimade_version() (in module httk.optimade.engine)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/validate/index.html#httk.optimade.engine.validate.determine_optimade_version">(in module httk.optimade.engine.validate)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.dimension_slices">dimension_slices (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.dimension_slices">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.dimension_slices">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialValue.dimensions">dimensions (httk.optimade.backend.partial.PartialValue attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialValue.dimensions">(httk.optimade.backend.PartialValue attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.encoding">encoding (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.encoding">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.encoding">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.endpoint">endpoint (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.endpoint">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.endpoint">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.endpoint">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.endpoint">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.endpoint">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse">EndpointResponse (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse">(class in httk.optimade.model.request)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.endswith">endswith() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.entry_definition_ids">entry_definition_ids (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.entry_info">entry_info (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.entry_type">entry_type() (httk.optimade.client.OptimadeStore method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.entry_type">(httk.optimade.OptimadeStore method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.entry_type_definition_from_simple">entry_type_definition_from_simple() (in module httk.optimade.schema.served)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.entry_types">entry_types (httk.optimade.client.OptimadeStore property)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.entry_types">(httk.optimade.OptimadeStore property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.entry_types_by_name">entry_types_by_name (httk.optimade.client.OptimadeStore property)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.entry_types_by_name">(httk.optimade.OptimadeStore property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource">EntrySource (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource">(class in httk.optimade.backend)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource">(class in httk.optimade.backend.adapter)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.execute_query">execute_query() (in module httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.execute_query">(in module httk.optimade.backend.execution)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialValue.fetch">fetch (httk.optimade.backend.partial.PartialValue attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialValue.fetch">(httk.optimade.backend.PartialValue attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter.field_handlers">field_handlers (httk.optimade.backend.adapter.BackendAdapter attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter.field_handlers">(httk.optimade.backend.BackendAdapter attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter.field_handlers">(httk.optimade.BackendAdapter attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.FieldExtractor">FieldExtractor (in module httk.optimade.backend.adapter)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource.fields">fields (httk.optimade.backend.adapter.EntrySource attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource.fields">(httk.optimade.backend.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource.fields">(httk.optimade.EntrySource attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.filter">filter (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.filter">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.filter">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet.first">first() (httk.optimade.backend.memory_store.MemoryResultSet method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.first">(httk.optimade.remote_query.RemoteResultSet method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.first">(httk.optimade.RemoteResultSet method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.format_optimade_error">format_optimade_error() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/error/index.html#httk.optimade.endpoints.error.format_optimade_error">(in module httk.optimade.endpoints.error)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/translation/index.html#httk.optimade.backend.translation.format_value">format_value() (in module httk.optimade.backend.translation)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.fulltype_of">fulltype_of() (in module httk.optimade.schema.served)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_base_endpoint_reply">generate_base_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#httk.optimade.endpoints.info.generate_base_endpoint_reply">(in module httk.optimade.endpoints.info)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_entry_endpoint_reply">generate_entry_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/entries/index.html#httk.optimade.endpoints.entries.generate_entry_endpoint_reply">(in module httk.optimade.endpoints.entries)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_entry_info_endpoint_reply">generate_entry_info_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#httk.optimade.endpoints.info.generate_entry_info_endpoint_reply">(in module httk.optimade.endpoints.info)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_info_endpoint_reply">generate_info_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#httk.optimade.endpoints.info.generate_info_endpoint_reply">(in module httk.optimade.endpoints.info)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_links_endpoint_reply">generate_links_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#httk.optimade.endpoints.info.generate_links_endpoint_reply">(in module httk.optimade.endpoints.info)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_meta">generate_meta() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/meta/index.html#httk.optimade.endpoints.meta.generate_meta">(in module httk.optimade.endpoints.meta)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/partial_data/index.html#httk.optimade.endpoints.partial_data.generate_partial_data_reply">generate_partial_data_reply() (in module httk.optimade.endpoints.partial_data)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_single_entry_endpoint_reply">generate_single_entry_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/entries/index.html#httk.optimade.endpoints.entries.generate_single_entry_endpoint_reply">(in module httk.optimade.endpoints.entries)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#httk.optimade.endpoints.generate_versions_endpoint_reply">generate_versions_endpoint_reply() (in module httk.optimade.endpoints)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#httk.optimade.endpoints.info.generate_versions_endpoint_reply">(in module httk.optimade.endpoints.info)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="H" class="genindex-section">
+  <h2>H</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.has">has() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.has_any">has_any() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.has_only">has_only() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+        <li>
+    httk.optimade
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#module-httk.optimade">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.api
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/api/index.html#module-httk.optimade.api">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#module-httk.optimade.backend">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.adapter
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#module-httk.optimade.backend.adapter">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.execution
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#module-httk.optimade.backend.execution">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.handlers
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/handlers/index.html#module-httk.optimade.backend.handlers">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.memory_store
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#module-httk.optimade.backend.memory_store">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.partial
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#module-httk.optimade.backend.partial">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.protocols
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#module-httk.optimade.backend.protocols">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.providers
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/providers/index.html#module-httk.optimade.backend.providers">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.backend.translation
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/translation/index.html#module-httk.optimade.backend.translation">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.client
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#module-httk.optimade.client">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.endpoints
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#module-httk.optimade.endpoints">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.endpoints.entries
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/entries/index.html#module-httk.optimade.endpoints.entries">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.endpoints.error
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/error/index.html#module-httk.optimade.endpoints.error">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.endpoints.info
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#module-httk.optimade.endpoints.info">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.endpoints.meta
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/meta/index.html#module-httk.optimade.endpoints.meta">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    httk.optimade.endpoints.partial_data
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/partial_data/index.html#module-httk.optimade.endpoints.partial_data">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.engine
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/index.html#module-httk.optimade.engine">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.engine.processing
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/processing/index.html#module-httk.optimade.engine.processing">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.engine.validate
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/validate/index.html#module-httk.optimade.engine.validate">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.filter
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/filter/index.html#module-httk.optimade.filter">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#module-httk.optimade.model">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model.config
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/config/index.html#module-httk.optimade.model.config">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model.errors
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#module-httk.optimade.model.errors">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model.request
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#module-httk.optimade.model.request">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model.results
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#module-httk.optimade.model.results">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.model.versions
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/versions/index.html#module-httk.optimade.model.versions">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.remote_query
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#module-httk.optimade.remote_query">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.runtime
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/runtime/index.html#module-httk.optimade.runtime">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.runtime.asgi
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/runtime/asgi/index.html#module-httk.optimade.runtime.asgi">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.runtime.devserver
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/runtime/devserver/index.html#module-httk.optimade.runtime.devserver">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.schema
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/schema/index.html#module-httk.optimade.schema">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.schema.served
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#module-httk.optimade.schema.served">module</a>
+</li>
+        </ul></li>
+        <li>
+    httk.optimade.schema.trajectories
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/schema/trajectories/index.html#module-httk.optimade.schema.trajectories">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.implementation">implementation (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.implementation">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.implementation">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.include">include (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.include">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.include">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.include_paths">include_paths (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.include_paths">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.include_paths">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.InMemoryStore">InMemoryStore (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.InMemoryStore">(class in httk.optimade.backend)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.InMemoryStore">(class in httk.optimade.backend.memory_store)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.is_in">is_in() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="J" class="genindex-section">
+  <h2>J</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.json_response">json_response (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.json_response">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.json_response">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialDimension.length">length (httk.optimade.backend.partial.PartialDimension attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialDimension.length">(httk.optimade.backend.PartialDimension attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.license">license (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.license">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.license">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.limit">limit (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.limit">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.links">links (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.links">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.links">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/engine/processing/index.html#httk.optimade.engine.processing.logger">logger (in module httk.optimade.engine.processing)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.max_pages">max_pages (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.max_pages">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryExpression">MemoryExpression (class in httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField">MemoryField (class in httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet">MemoryResultSet (class in httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher">MemorySearcher (class in httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryVariable">MemoryVariable (class in httk.optimade.backend.memory_store)</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#module-httk.optimade">httk.optimade</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/api/index.html#module-httk.optimade.api">httk.optimade.api</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#module-httk.optimade.backend">httk.optimade.backend</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#module-httk.optimade.backend.adapter">httk.optimade.backend.adapter</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#module-httk.optimade.backend.execution">httk.optimade.backend.execution</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/handlers/index.html#module-httk.optimade.backend.handlers">httk.optimade.backend.handlers</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#module-httk.optimade.backend.memory_store">httk.optimade.backend.memory_store</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#module-httk.optimade.backend.partial">httk.optimade.backend.partial</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#module-httk.optimade.backend.protocols">httk.optimade.backend.protocols</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/providers/index.html#module-httk.optimade.backend.providers">httk.optimade.backend.providers</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/translation/index.html#module-httk.optimade.backend.translation">httk.optimade.backend.translation</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#module-httk.optimade.client">httk.optimade.client</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/index.html#module-httk.optimade.endpoints">httk.optimade.endpoints</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/entries/index.html#module-httk.optimade.endpoints.entries">httk.optimade.endpoints.entries</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/error/index.html#module-httk.optimade.endpoints.error">httk.optimade.endpoints.error</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/info/index.html#module-httk.optimade.endpoints.info">httk.optimade.endpoints.info</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/meta/index.html#module-httk.optimade.endpoints.meta">httk.optimade.endpoints.meta</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/endpoints/partial_data/index.html#module-httk.optimade.endpoints.partial_data">httk.optimade.endpoints.partial_data</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/engine/index.html#module-httk.optimade.engine">httk.optimade.engine</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/engine/processing/index.html#module-httk.optimade.engine.processing">httk.optimade.engine.processing</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/engine/validate/index.html#module-httk.optimade.engine.validate">httk.optimade.engine.validate</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/filter/index.html#module-httk.optimade.filter">httk.optimade.filter</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#module-httk.optimade.model">httk.optimade.model</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/config/index.html#module-httk.optimade.model.config">httk.optimade.model.config</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#module-httk.optimade.model.errors">httk.optimade.model.errors</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#module-httk.optimade.model.request">httk.optimade.model.request</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#module-httk.optimade.model.results">httk.optimade.model.results</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/versions/index.html#module-httk.optimade.model.versions">httk.optimade.model.versions</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#module-httk.optimade.remote_query">httk.optimade.remote_query</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/runtime/index.html#module-httk.optimade.runtime">httk.optimade.runtime</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/runtime/asgi/index.html#module-httk.optimade.runtime.asgi">httk.optimade.runtime.asgi</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/runtime/devserver/index.html#module-httk.optimade.runtime.devserver">httk.optimade.runtime.devserver</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/schema/index.html#module-httk.optimade.schema">httk.optimade.schema</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#module-httk.optimade.schema.served">httk.optimade.schema.served</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/schema/trajectories/index.html#module-httk.optimade.schema.trajectories">httk.optimade.schema.trajectories</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.more_data_available">more_data_available (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#httk.optimade.backend.protocols.QueryResults.more_data_available">(httk.optimade.backend.protocols.QueryResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.QueryResults.more_data_available">(httk.optimade.backend.QueryResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.more_data_available">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.QueryResults.more_data_available">(httk.optimade.model.QueryResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.QueryResults.more_data_available">(httk.optimade.model.results.QueryResults attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.name">name (httk.optimade.backend.memory_store.MemoryField attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialDimension.name">(httk.optimade.backend.partial.PartialDimension attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialDimension.name">(httk.optimade.backend.PartialDimension attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.name">(httk.optimade.client.RemoteEntryType attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultColumn.name">(httk.optimade.remote_query.RemoteResultColumn attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.name">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultColumn.name">(httk.optimade.RemoteResultColumn attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.names">names (httk.optimade.remote_query.RemoteResultSet attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.names">(httk.optimade.RemoteResultSet attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="O" class="genindex-section">
+  <h2>O</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.offset">offset (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.offset">(httk.optimade.backend.memory_store.MemorySearcher attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.offset">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.offset">(httk.optimade.remote_query.RemoteSearcher attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.offset">(httk.optimade.RemoteSearcher attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet.one">one() (httk.optimade.backend.memory_store.MemoryResultSet method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.one">(httk.optimade.remote_query.RemoteResultSet method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.one">(httk.optimade.RemoteResultSet method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.optimade_default_version">optimade_default_version (in module httk.optimade.model)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/versions/index.html#httk.optimade.model.versions.optimade_default_version">(in module httk.optimade.model.versions)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.optimade_supported_versions">optimade_supported_versions (in module httk.optimade.model)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/versions/index.html#httk.optimade.model.versions.optimade_supported_versions">(in module httk.optimade.model.versions)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeClientError">OptimadeClientError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeClientError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig">OptimadeConfig (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig">(class in httk.optimade.model.config)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeDiscoveryError">OptimadeDiscoveryError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeDiscoveryError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeError">OptimadeError</a>, <a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.OptimadeError">[1]</a>, <a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeError">[2]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeErrorDocumentError">OptimadeErrorDocumentError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeErrorDocumentError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeHTTPError">OptimadeHTTPError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeHTTPError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadePaginationError">OptimadePaginationError</a>, <a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.OptimadePaginationError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeResponseError">OptimadeResponseError</a>, <a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.OptimadeResponseError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore">OptimadeStore (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore">(class in httk.optimade.client)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeTransportError">OptimadeTransportError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeTransportError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeVersionNegotiationError">OptimadeVersionNegotiationError</a>, <a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeVersionNegotiationError">[1]</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.output">output() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.output">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.output">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.page_limit">page_limit (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.page_limit">(httk.optimade.model.request.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.page_limit">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.page_limit">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.page_limit">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/engine/validate/index.html#httk.optimade.engine.validate.PAGE_LIMIT_MAX">PAGE_LIMIT_MAX (in module httk.optimade.engine.validate)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.page_offset">page_offset (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.page_offset">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.page_offset">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.pairs">pairs (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.pairs">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.partial_data_chunk_size">partial_data_chunk_size (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.partial_data_chunk_size">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.partial_data_chunk_size">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.partial_data_offset">partial_data_offset (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.partial_data_offset">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.partial_data_offset">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.partial_data_parts">partial_data_parts (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.partial_data_parts">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.partial_data_parts">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialDimension">PartialDimension (class in httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialDimension">(class in httk.optimade.backend.partial)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialValue">PartialValue (class in httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialValue">(class in httk.optimade.backend.partial)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryExpression.predicate">predicate (httk.optimade.backend.memory_store.MemoryExpression attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.Predicate">Predicate (in module httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.process">process() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/index.html#httk.optimade.engine.process">(in module httk.optimade.engine)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/engine/processing/index.html#httk.optimade.engine.processing.process">(in module httk.optimade.engine.processing)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.process_init">process_init() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/index.html#httk.optimade.engine.process_init">(in module httk.optimade.engine)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/engine/processing/index.html#httk.optimade.engine.processing.process_init">(in module httk.optimade.engine.processing)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.properties_by_entry">properties_by_entry (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.property_definitions">property_definitions (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.property_iris">property_iris (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.property_iris">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource.property_metadata">property_metadata (httk.optimade.backend.adapter.EntrySource attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource.property_metadata">(httk.optimade.backend.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource.property_metadata">(httk.optimade.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ResultRow.property_metadata">(httk.optimade.model.ResultRow attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.ResultRow.property_metadata">(httk.optimade.model.results.ResultRow attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.property_metadata_requested">property_metadata_requested (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.property_metadata_requested">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.property_metadata_requested">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.property_names">property_names (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.property_names">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.property_types">property_types (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.property_types">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.provider">provider (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.provider">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.provider">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.providers_from_registry">providers_from_registry() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.providers_from_registry">(in module httk.optimade.backend)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/providers/index.html#httk.optimade.backend.providers.providers_from_registry">(in module httk.optimade.backend.providers)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Q" class="genindex-section">
+  <h2>Q</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.query">query (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.query">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.query">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.query">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.query">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.query">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter.query_function">query_function() (httk.optimade.backend.adapter.BackendAdapter method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter.query_function">(httk.optimade.backend.BackendAdapter method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter.query_function">(httk.optimade.BackendAdapter method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.QueryFunction">QueryFunction (class in httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#httk.optimade.backend.protocols.QueryFunction">(class in httk.optimade.backend.protocols)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.QueryFunction">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.QueryFunction">(class in httk.optimade.model.results)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.QueryResults">QueryResults (class in httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/protocols/index.html#httk.optimade.backend.protocols.QueryResults">(class in httk.optimade.backend.protocols)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.QueryResults">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.QueryResults">(class in httk.optimade.model.results)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.querystr">querystr (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.querystr">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.querystr">(httk.optimade.RawRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest">RawRequest (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest">(class in httk.optimade.model.request)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.recognized_prefixes">recognized_prefixes (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.recognized_prefixes">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.recognized_prefixes">(httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.recognized_response_fields">recognized_response_fields (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.recognized_response_fields">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.recognized_response_fields">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.refresh">refresh() (httk.optimade.client.OptimadeStore method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.refresh">(httk.optimade.OptimadeStore method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/endpoints/entries/index.html#httk.optimade.endpoints.entries.RelatedResolver">RelatedResolver (in module httk.optimade.endpoints.entries)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource.relationships">relationships (httk.optimade.backend.adapter.EntrySource attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource.relationships">(httk.optimade.backend.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource.relationships">(httk.optimade.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ResultRow.relationships">(httk.optimade.model.ResultRow attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.ResultRow.relationships">(httk.optimade.model.results.ResultRow attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.relurl">relurl (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.relurl">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.relurl">(httk.optimade.RawRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType">RemoteEntryType (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType">(class in httk.optimade.client)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultColumn">RemoteResultColumn (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultColumn">(class in httk.optimade.remote_query)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet">RemoteResultSet (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet">(class in httk.optimade.remote_query)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher">RemoteSearcher (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher">(class in httk.optimade.remote_query)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.representation">representation (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.representation">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.representation">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.representation">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.representation">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.representation">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.request_delay">request_delay (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.request_delay">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.request_delay">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.request_id">request_id (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.request_id">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.request_id">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.request_id">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.request_id">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.request_id">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.requested_base_url">requested_base_url (httk.optimade.client.OptimadeStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.requested_base_url">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RequestedSlice">RequestedSlice (class in httk.optimade.model.request)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.required_response_fields">required_response_fields (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.response_code">response_code (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.response_code">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.OptimadeError.response_code">(httk.optimade.model.errors.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeError.response_code">(httk.optimade.model.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.response_code">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeError.response_code">(httk.optimade.OptimadeError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.response_fields">response_fields (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.response_fields">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.response_fields">(httk.optimade.client.OptimadeStore attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.response_fields">(httk.optimade.model.request.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.response_fields">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.response_fields">(httk.optimade.OptimadeStore attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.response_fields">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.response_format">response_format (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.response_format">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.response_format">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EndpointResponse.response_msg">response_msg (httk.optimade.EndpointResponse attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.EndpointResponse.response_msg">(httk.optimade.model.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.OptimadeError.response_msg">(httk.optimade.model.errors.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeError.response_msg">(httk.optimade.model.OptimadeError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.EndpointResponse.response_msg">(httk.optimade.model.request.EndpointResponse attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeError.response_msg">(httk.optimade.OptimadeError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ResultRow">ResultRow (class in httk.optimade.model)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.ResultRow">(class in httk.optimade.model.results)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.results">results() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.results">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.results">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.Row">Row (in module httk.optimade.backend.memory_store)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/runtime/index.html#httk.optimade.runtime.run_dev_server">run_dev_server() (in module httk.optimade.runtime)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/runtime/devserver/index.html#httk.optimade.runtime.devserver.run_dev_server">(in module httk.optimade.runtime.devserver)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryResultSet.scalars">scalars() (httk.optimade.backend.memory_store.MemoryResultSet method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteResultSet.scalars">(httk.optimade.remote_query.RemoteResultSet method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteResultSet.scalars">(httk.optimade.RemoteResultSet method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter.schema">schema (httk.optimade.backend.adapter.BackendAdapter attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter.schema">(httk.optimade.backend.BackendAdapter attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter.schema">(httk.optimade.BackendAdapter attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.schema">(httk.optimade.client.RemoteEntryType attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.schema">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/config/index.html#httk.optimade.model.config.OptimadeConfig.schema_url">schema_url (httk.optimade.model.config.OptimadeConfig attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.OptimadeConfig.schema_url">(httk.optimade.model.OptimadeConfig attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeConfig.schema_url">(httk.optimade.OptimadeConfig attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.InMemoryStore.searcher">searcher() (httk.optimade.backend.InMemoryStore method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.InMemoryStore.searcher">(httk.optimade.backend.memory_store.InMemoryStore method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeStore.searcher">(httk.optimade.client.OptimadeStore method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.InMemoryStore.searcher">(httk.optimade.InMemoryStore method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeStore.searcher">(httk.optimade.OptimadeStore method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.serve">serve() (in module httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/api/index.html#httk.optimade.api.serve">(in module httk.optimade.api)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema">ServedSchema (class in httk.optimade.schema.served)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.set_limit">set_limit() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.set_limit">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.set_limit">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.simplified_property">simplified_property() (in module httk.optimade.schema.served)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/partial/index.html#httk.optimade.backend.partial.PartialDimension.sliceable">sliceable (httk.optimade.backend.partial.PartialDimension attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.PartialDimension.sliceable">(httk.optimade.backend.PartialDimension attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters.sort">sort (httk.optimade.model.request.ValidatedParameters attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters.sort">(httk.optimade.model.ValidatedParameters attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters.sort">(httk.optimade.ValidatedParameters attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.sort_fields">sort_fields (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.sort_fields">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.sort_fields">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource.sort_keys">sort_keys (httk.optimade.backend.adapter.EntrySource attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource.sort_keys">(httk.optimade.backend.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource.sort_keys">(httk.optimade.EntrySource attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.RemoteEntryType.sortable_properties">sortable_properties (httk.optimade.client.RemoteEntryType attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteEntryType.sortable_properties">(httk.optimade.RemoteEntryType attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.sortable_response_fields">sortable_response_fields (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeDiscoveryError.source_url">source_url (httk.optimade.client.OptimadeDiscoveryError attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeHTTPError.source_url">(httk.optimade.client.OptimadeHTTPError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeTransportError.source_url">(httk.optimade.client.OptimadeTransportError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeVersionNegotiationError.source_url">(httk.optimade.client.OptimadeVersionNegotiationError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeDiscoveryError.source_url">(httk.optimade.OptimadeDiscoveryError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeHTTPError.source_url">(httk.optimade.OptimadeHTTPError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeTransportError.source_url">(httk.optimade.OptimadeTransportError attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeVersionNegotiationError.source_url">(httk.optimade.OptimadeVersionNegotiationError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter.sources">sources (httk.optimade.backend.adapter.BackendAdapter attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter.sources">(httk.optimade.backend.BackendAdapter attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter.sources">(httk.optimade.BackendAdapter attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RequestedSlice.start">start (httk.optimade.model.request.RequestedSlice attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryField.startswith">startswith() (httk.optimade.backend.memory_store.MemoryField method)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/client/index.html#httk.optimade.client.OptimadeHTTPError.status_code">status_code (httk.optimade.client.OptimadeHTTPError attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.OptimadeHTTPError.status_code">(httk.optimade.OptimadeHTTPError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RequestedSlice.step">step (httk.optimade.model.request.RequestedSlice attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RequestedSlice.stop">stop (httk.optimade.model.request.RequestedSlice attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.BackendAdapter.store">store (httk.optimade.backend.adapter.BackendAdapter attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.BackendAdapter.store">(httk.optimade.backend.BackendAdapter attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.BackendAdapter.store">(httk.optimade.BackendAdapter attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults">StoreResults (class in httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults">(class in httk.optimade.backend.execution)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.InMemoryStore.tables">tables (httk.optimade.backend.InMemoryStore attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.InMemoryStore.tables">(httk.optimade.backend.memory_store.InMemoryStore attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.InMemoryStore.tables">(httk.optimade.InMemoryStore attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/adapter/index.html#httk.optimade.backend.adapter.EntrySource.target">target (httk.optimade.backend.adapter.EntrySource attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.EntrySource.target">(httk.optimade.backend.EntrySource attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemoryVariable.target">(httk.optimade.backend.memory_store.MemoryVariable attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.EntrySource.target">(httk.optimade.EntrySource attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/schema/trajectories/index.html#httk.optimade.schema.trajectories.trajectories_entry_info">trajectories_entry_info() (in module httk.optimade.schema.trajectories)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.translate_filter">translate_filter() (in module httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/translation/index.html#httk.optimade.backend.translation.translate_filter">(in module httk.optimade.backend.translation)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.translate_filter_node">translate_filter_node() (in module httk.optimade.backend)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/translation/index.html#httk.optimade.backend.translation.translate_filter_node">(in module httk.optimade.backend.translation)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.translator_error_from">translator_error_from() (in module httk.optimade.model.errors)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.TranslatorError">TranslatorError</a>, <a href="reference/autoapi/httk/optimade/model/errors/index.html#httk.optimade.model.errors.TranslatorError">[1]</a>, <a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.TranslatorError">[2]</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/execution/index.html#httk.optimade.backend.execution.StoreResults.unknown_response_fields">unknown_response_fields (httk.optimade.backend.execution.StoreResults attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/backend/index.html#httk.optimade.backend.StoreResults.unknown_response_fields">(httk.optimade.backend.StoreResults attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.unknown_response_fields">(httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.unrecognized_response_fields">unrecognized_response_fields (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.unrecognized_response_fields">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.unrecognized_response_fields">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.url_version">url_version (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.url_version">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.url_version">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="V" class="genindex-section">
+  <h2>V</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/schema/served/index.html#httk.optimade.schema.served.ServedSchema.valid_endpoints">valid_endpoints (httk.optimade.schema.served.ServedSchema attribute)</a>
+</li>
+        <li><a href="reference/autoapi/httk/optimade/engine/index.html#httk.optimade.engine.validate_optimade_request">validate_optimade_request() (in module httk.optimade.engine)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/engine/validate/index.html#httk.optimade.engine.validate.validate_optimade_request">(in module httk.optimade.engine.validate)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedParameters">ValidatedParameters (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedParameters">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedParameters">(class in httk.optimade.model.request)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest">ValidatedRequest (class in httk.optimade)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest">(class in httk.optimade.model)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest">(class in httk.optimade.model.request)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ResultRow.values">values (httk.optimade.model.ResultRow attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/results/index.html#httk.optimade.model.results.ResultRow.values">(httk.optimade.model.results.ResultRow attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/backend/memory_store/index.html#httk.optimade.backend.memory_store.MemorySearcher.variable">variable() (httk.optimade.backend.memory_store.MemorySearcher method)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/remote_query/index.html#httk.optimade.remote_query.RemoteSearcher.variable">(httk.optimade.remote_query.RemoteSearcher method)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RemoteSearcher.variable">(httk.optimade.RemoteSearcher method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.RawRequest.version">version (httk.optimade.model.RawRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.RawRequest.version">(httk.optimade.model.request.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.version">(httk.optimade.model.request.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.version">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.RawRequest.version">(httk.optimade.RawRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.version">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="W" class="genindex-section">
+  <h2>W</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/autoapi/httk/optimade/model/request/index.html#httk.optimade.model.request.ValidatedRequest.warnings">warnings (httk.optimade.model.request.ValidatedRequest attribute)</a>
+
+        <ul>
+          <li><a href="reference/autoapi/httk/optimade/model/index.html#httk.optimade.model.ValidatedRequest.warnings">(httk.optimade.model.ValidatedRequest attribute)</a>
+</li>
+          <li><a href="reference/autoapi/httk/optimade/index.html#httk.optimade.ValidatedRequest.warnings">(httk.optimade.ValidatedRequest attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, The httk-optimade AUTHORS
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=fe42cd0d"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=fd10adb8"></script>
+    <script src="_static/selector.js?v=875006ce"></script>
+    <script>window.HTTK_DOCS_VERSIONING = {"channel":"dev","version":"dev:main","versionPathDepth":2};</script>
+    </body>
+</html>

@@ -1,0 +1,259 @@
+httk.optimade.client
+====================
+
+.. py:module:: httk.optimade.client
+
+.. autoapi-nested-parse::
+
+   Synchronous, read-only discovery for remote OPTIMADE services.
+
+   This module establishes lossless schema snapshots and strict definition-IRI
+   recognition. Query construction and paginated execution live in
+   ``remote_query`` and are imported lazily by :meth:`OptimadeStore.searcher`.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   httk.optimade.client.ALL_ADVERTISED
+
+
+Exceptions
+----------
+
+.. autoapisummary::
+
+   httk.optimade.client.OptimadeClientError
+   httk.optimade.client.OptimadeTransportError
+   httk.optimade.client.OptimadeHTTPError
+   httk.optimade.client.OptimadeErrorDocumentError
+   httk.optimade.client.OptimadeDiscoveryError
+   httk.optimade.client.OptimadeVersionNegotiationError
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   httk.optimade.client.RemoteEntryType
+   httk.optimade.client.OptimadeStore
+
+
+Module Contents
+---------------
+
+.. py:data:: ALL_ADVERTISED
+
+.. py:exception:: OptimadeClientError
+
+   Bases: :py:obj:`RuntimeError`
+
+
+   Base class for safe, client-side OPTIMADE failures.
+
+
+.. py:exception:: OptimadeTransportError(source_url: str, detail: str)
+
+   Bases: :py:obj:`OptimadeClientError`
+
+
+   The HTTP client could not complete a request.
+
+
+   .. py:attribute:: source_url
+
+
+   .. py:attribute:: detail
+
+
+.. py:exception:: OptimadeHTTPError(source_url: str, status_code: int, detail: str | None = None)
+
+   Bases: :py:obj:`OptimadeClientError`
+
+
+   A remote endpoint returned a non-success HTTP status.
+
+
+   .. py:attribute:: source_url
+
+
+   .. py:attribute:: status_code
+
+
+   .. py:attribute:: detail
+      :value: None
+
+
+
+.. py:exception:: OptimadeErrorDocumentError(source_url: str, status_code: int, detail: str | None = None)
+
+   Bases: :py:obj:`OptimadeHTTPError`
+
+
+   A non-success response supplied a parseable OPTIMADE ``errors`` document.
+
+
+.. py:exception:: OptimadeDiscoveryError(source_url: str, detail: str)
+
+   Bases: :py:obj:`OptimadeClientError`
+
+
+   An ``/info`` document was malformed or inconsistent for discovery.
+
+
+   .. py:attribute:: source_url
+
+
+   .. py:attribute:: detail
+
+
+.. py:exception:: OptimadeVersionNegotiationError(source_url: str, detail: str)
+
+   Bases: :py:obj:`OptimadeClientError`
+
+
+   An OPTIMADE base URL could not be negotiated to a supported API version.
+
+
+   .. py:attribute:: source_url
+
+
+   .. py:attribute:: detail
+
+
+.. py:class:: RemoteEntryType
+
+   One immutable remote entry endpoint discovered from ``/info``.
+
+   ``name`` is solely the service's transport endpoint name.  Semantic
+   recognition is intentionally represented by ``binding`` and is derived
+   exclusively from definition IRIs.
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: definition_id
+      :type:  str | None
+
+
+   .. py:attribute:: schema
+      :type:  httk.core.OptimadeSchemaSnapshot
+
+
+   .. py:attribute:: property_iris
+      :type:  collections.abc.Mapping[str, str]
+
+
+   .. py:attribute:: property_names
+      :type:  collections.abc.Mapping[str, str]
+
+
+   .. py:attribute:: property_types
+      :type:  collections.abc.Mapping[str, tuple[str, str | None]]
+
+
+   .. py:attribute:: advertised_properties
+      :type:  tuple[str, Ellipsis]
+
+
+   .. py:attribute:: default_response_properties
+      :type:  tuple[str, Ellipsis]
+
+
+   .. py:attribute:: sortable_properties
+      :type:  tuple[str, Ellipsis]
+
+
+   .. py:attribute:: binding
+      :type:  httk.core.OptimadeEntryBinding | None
+
+
+   .. py:attribute:: backend
+      :type:  type
+
+
+.. py:class:: OptimadeStore(base_url: str, *, client: object | None = None, page_limit: int = 100, max_pages: int = 10000, allow_cross_origin_pagination: bool = False, response_fields: object | None = None)
+
+   A synchronous read-only OPTIMADE service connection with eager discovery.
+
+
+   .. py:attribute:: requested_base_url
+
+
+   .. py:attribute:: base_url
+
+
+   .. py:attribute:: page_limit
+      :value: 100
+
+
+
+   .. py:attribute:: max_pages
+      :value: 10000
+
+
+
+   .. py:attribute:: allow_cross_origin_pagination
+      :value: False
+
+
+
+   .. py:attribute:: response_fields
+      :value: None
+
+
+
+   .. py:attribute:: api_version
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:property:: entry_types
+      :type: tuple[RemoteEntryType, Ellipsis]
+
+
+      Discovered entry endpoints in the service-advertised order.
+
+
+   .. py:property:: entry_types_by_name
+      :type: collections.abc.Mapping[str, RemoteEntryType]
+
+
+      An immutable transport-name lookup for :attr:`entry_types`.
+
+
+   .. py:method:: entry_type(name: str) -> RemoteEntryType
+
+      Return one discovered endpoint by its transport name.
+
+
+
+   .. py:method:: refresh() -> None
+
+      Atomically replace discovery state after a fully successful rediscovery.
+
+
+
+   .. py:method:: close() -> None
+
+      Close an internally owned HTTP client; borrowed clients stay open.
+
+
+
+   .. py:method:: searcher(*, response_fields: object = ...) -> httk.optimade.remote_query.RemoteSearcher
+
+      Create one synchronous, read-only remote search plan.
+
+      Passing ``response_fields`` overrides the store-level selection. An
+      omitted value inherits it, while explicit ``None`` requests the
+      service default.
+
+
+

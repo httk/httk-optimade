@@ -1,0 +1,125 @@
+httk.optimade.remote_query
+==========================
+
+.. py:module:: httk.optimade.remote_query
+
+.. autoapi-nested-parse::
+
+   Neutral synchronous query/result protocols over a remote OPTIMADE service.
+
+
+
+Exceptions
+----------
+
+.. autoapisummary::
+
+   httk.optimade.remote_query.OptimadeResponseError
+   httk.optimade.remote_query.OptimadePaginationError
+   httk.optimade.remote_query.CountUnavailableError
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   httk.optimade.remote_query.RemoteSearcher
+   httk.optimade.remote_query.RemoteResultColumn
+   httk.optimade.remote_query.RemoteResultSet
+
+
+Module Contents
+---------------
+
+.. py:exception:: OptimadeResponseError
+
+   Bases: :py:obj:`httk.optimade.client.OptimadeClientError`
+
+
+   A successful HTTP response was not a usable OPTIMADE entry document.
+
+
+.. py:exception:: OptimadePaginationError
+
+   Bases: :py:obj:`OptimadeResponseError`
+
+
+   A remote continuation was unsafe, malformed, or non-terminating.
+
+
+.. py:exception:: CountUnavailableError
+
+   Bases: :py:obj:`OptimadeResponseError`
+
+
+   The service omitted a valid filtered ``meta.data_available`` count.
+
+
+.. py:class:: RemoteSearcher(store: httk.optimade.client.OptimadeStore, *, response_fields: object = None)
+
+   One portable single-root OPTIMADE query under construction.
+
+
+   .. py:attribute:: offset
+      :value: 0
+
+
+
+   .. py:method:: variable(target: object) -> _RemoteVariable
+
+
+   .. py:method:: add(expression: object) -> None
+
+
+   .. py:method:: output(variable: object, name: str) -> None
+
+
+   .. py:method:: add_sort(field: object, descending: bool = False) -> None
+
+
+   .. py:method:: set_limit(limit: int) -> None
+
+
+   .. py:method:: add_offset(offset: int) -> None
+
+
+   .. py:method:: count() -> int
+
+
+   .. py:method:: results(**outputs: object) -> RemoteResultSet
+
+
+.. py:class:: RemoteResultColumn(result: RemoteResultSet, index: int)
+
+   One named scalar projection from a lazy remote result set.
+
+
+   .. py:attribute:: name
+
+
+.. py:class:: RemoteResultSet(searcher: RemoteSearcher, outputs: collections.abc.Mapping[str, object] | None = None)
+
+   A frozen, lazy and re-iterable remote OPTIMADE result plan.
+
+
+   .. py:attribute:: names
+
+
+   .. py:method:: first() -> httk.data.ResultRow | None
+
+
+   .. py:method:: one() -> httk.data.ResultRow
+
+
+   .. py:method:: scalars(name: str | None = None) -> collections.abc.Iterator[object]
+
+
+   .. py:method:: column(name: str) -> RemoteResultColumn
+
+
+   .. py:method:: cursor() -> collections.abc.Iterator[httk.data.ResultRow]
+      :abstractmethod:
+
+
+
